@@ -1,1 +1,1 @@
-# tribe
+tribe-stats
