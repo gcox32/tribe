@@ -14,28 +14,29 @@ layout = html.Div(children=[
     html.Div(
         className="container",
         children=[
-            html.Div(
-                html.Div(
-                    className="row",
-                    children=[
-                        html.Div(
-                            className="ten columns",
-                            children=[
-                                html.Br(),
-                                html.Div('Login successfull'),
-                            ]
-                        ),
-                        html.Div(
-                            className="two columns",
-                            # children=html.A(html.Button('LogOut'), href='/')
-                            children=[
-                                html.Br(),
-                                html.Button(id='back-button', children='Go back', n_clicks=0)
-                            ]
-                        )
-                    ]
-                )
-            )
+            # html.Div(
+            #     html.Div(
+            #         className="row",
+            #         children=[
+            #             html.Div(
+            #                 className="ten columns",
+            #                 children=[
+            #                     html.Br(),
+            #                     html.Div('Login successfull'),
+            #                 ]
+            #             ),
+            #             html.Div(
+            #                 className="two columns",
+            #                 # children=html.A(html.Button('LogOut'), href='/')
+            #                 children=[
+            #                     html.Br(),
+            #                     html.Button(id='back-button', children='Go back', n_clicks=0)
+            #                 ]
+            #             )
+            #         ]
+            #     )
+            # )
+            html.Div('Test')
         ]
     )
 ])

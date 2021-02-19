@@ -1,19 +1,25 @@
-tribe-stats
+# tribe-stats
 
-`pip install virtualenv
+Set up virtual environment to recreate
+```
+pip install virtualenv
 virtualenv tribe
 source tribe/bin/activate
 ...
 deactivate
-`
+```
 
-`pip install -r requirements.txt
+Install modules
+```
+pip install -r requirements.txt
 pip install -r requirements.in
-`
+```
 
-`brew install heroku/brew/heroku
+Set up Heroku
+```
+brew install heroku/brew/heroku
 heroku login
 heroku create
 git push heroku main
 heroku open
-`
+```

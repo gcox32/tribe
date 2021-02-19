@@ -11,11 +11,16 @@ header = html.Div(
     className='header',
     children=html.Div(
         className='container-width',
-        style={'height': '100%'},
+        style = {
+            'height': '90%',
+            'display': 'flex',
+            'justify-content': 'center',
+            'align-items': 'center'
+            },
         children=[
             html.Img(
-                src='assets/dash-logo-stripe.svg',
-                className='logo'
+                src='assets/tribe-logo.svg',
+                className='logo',
             ),
             html.Div(className='links', children=[
                 html.Div(id='user-name', className='link'),
