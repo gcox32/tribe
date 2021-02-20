@@ -5,7 +5,7 @@ from dash.dependencies import Input, Output
 
 from server import app, server
 from flask_login import logout_user, current_user
-from views import success, login, login_fd, logout
+from views import success, login, login_fd, logout, dashboard
 
 header = html.Div(
     className='header',
@@ -54,6 +54,11 @@ def display_page(pathname):
     elif pathname == '/success':
         if current_user.is_authenticated:
             return success.layout
+        else:
+            return login_fd.layout
+    elif pathname == '/dashboard':
+        if current_user.is_authenticated:
+            return dashboard.layout
         else:
             return login_fd.layout
     elif pathname == '/logout':

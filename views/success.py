@@ -24,7 +24,7 @@ layout = html.Div(children=[
                             className="ten columns",
                             children=[
                                 html.Br(),
-                                html.Div('Login successfull'),
+                                html.Div('Login successful'),
                             ]
                         ),
                         html.Div(
@@ -32,25 +32,12 @@ layout = html.Div(children=[
                             # children=html.A(html.Button('LogOut'), href='/')
                             children=[
                                 html.Br(),
-                                html.Button(id='back-button', children='Go back', n_clicks=0)
+                                html.Button(id='go-button', children='Go to TribeStats', n_clicks=0)
                             ]
                         )
                     ]
                 )
             )
-    # dbc.Col(html.Div([
-    #     dcc.Tabs(id = 'tabs',
-    #         value = 'tab-2', 
-    #         children = [
-    #             dcc.Tab(label='Data', value = 'tab-1'),
-    #             dcc.Tab(label='Objectives', value = 'tab-2'),
-    #             dcc.Tab(label='Creatives', value = 'tab-3'),
-    #             dcc.Tab(label='Platforms', value = 'tab-4'),
-    #             dcc.Tab(label='Plot', value = 'tab-5')
-    #         ]),
-    #         html.Div(id = 'tabs-content'
-    #         )
-    #     ]), width = 9)
         ]
     )
 ])
@@ -58,7 +45,7 @@ layout = html.Div(children=[
 
 # Create callbacks
 @app.callback(Output('url_login_success', 'pathname'),
-              [Input('back-button', 'n_clicks')])
+              [Input('go-button', 'n_clicks')])
 def logout_dashboard(n_clicks):
     if n_clicks > 0:
         return '/dashboard'
