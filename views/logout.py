@@ -19,7 +19,7 @@ layout = html.Div(children=[
                             className="ten columns",
                             children=[
                                 html.Br(),
-                                html.Div('User disconnected - Please login to view the success screen again'),
+                                html.Div('User disconnected - login to view tribe stats again'),
                             ]
                         ),
                         html.Div(
